@@ -23,3 +23,9 @@
 
 
 For now we can work on these api endpoints
+
+**Work on Dev branch not Main**
+
+pull the dev branch or create your own branch, pull dev to code on a specific feature then we can merge it to dev after code review
+
+once the project is done we can merge the dev into main
