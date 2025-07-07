@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 const app = express();
 
 const menuRoutes = require('./routes/menuRoutes');
-// const orderRoutes = require('./routes/orderRoutes');
+const orderRoutes = require('./routes/orderRoutes');
 
 //environment variables
 dotenv.config();
@@ -28,7 +28,7 @@ mongoose
 
 // API Routes
 app.use("/api/menu", menuRoutes);
-// app.use("/api/orders", orderRoutes);
+app.use("/api/orders", orderRoutes);
 
 //Root
 app.use("/", (req, res) => {
