@@ -14,7 +14,7 @@ const menuSchema = new mongoose.Schema({
   category: {
     type: String,
     required: [true, "Category is required"],
-    enum: ["starter", "main course", "dessert", "beverage", "snack"],
+    enum: ["Starters", "Mains", "Desserts", "Drinks"],
   },
   price: {
     type: Number,
@@ -25,6 +25,10 @@ const menuSchema = new mongoose.Schema({
     type: String,
     required: [true, "Image URL is required"],
     default: "https://placehold.co/300x200?text=Food+Image&font=roboto",
+  },
+  available: {
+    type: Boolean,
+    default: true,
   },
 });
 

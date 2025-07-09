@@ -5,7 +5,7 @@ const orderSchema = new mongoose.Schema(
     items: [
       {
         itemId: {
-          type: mongoose.Schema.Types.ObjectId,
+          type: mongoose.Schema.Types.ObjectId, // references a menu item
           ref: "Menu",
           required: true,
         },
@@ -21,12 +21,12 @@ const orderSchema = new mongoose.Schema(
       required: [true, "Customer name is required"],
     },
     tableNumber: {
-      type: String,
+      type: String, // string to allow "A1", "T3", etc.
       required: [true, "Table number is required"],
     },
     status: {
       type: String,
-      enum: ["pending", "preparing", "served"],
+      enum: ["pending", "preparing", "ready", "completed", "cancelled"],
       default: "pending",
     },
   },
