@@ -5,7 +5,7 @@ const orderSchema = new mongoose.Schema(
     items: [
       {
         itemId: {
-          type: mongoose.Schema.Types.ObjectId, // references a menu item
+          type: mongoose.Schema.Types.ObjectId,
           ref: "Menu",
           required: true,
         },
@@ -21,7 +21,7 @@ const orderSchema = new mongoose.Schema(
       required: [true, "Customer name is required"],
     },
     tableNumber: {
-      type: String, // string to allow "A1", "T3", etc.
+      type: String,
       required: [true, "Table number is required"],
     },
     status: {

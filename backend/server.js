@@ -6,10 +6,10 @@ const app = express();
 
 const menuRoutes = require('./routes/menuRoutes');
 const orderRoutes = require('./routes/orderRoutes');
+const adminAuthRoutes = require('./routes/adminAuth');
 
 //environment variables
 dotenv.config();
-
 const PORT = process.env.PORT || 8080;
 const dbUri = process.env.MONGO_URI;
 
@@ -29,6 +29,7 @@ mongoose
 // API Routes
 app.use("/api/menu", menuRoutes);
 app.use("/api/orders", orderRoutes);
+app.use("/api/admin", adminAuthRoutes);
 
 //Root
 app.use("/", (req, res) => {
