@@ -1,31 +1,84 @@
-## API Endpoints
+<h1 align="center">🍽️ BellaVista</h1>
+<p align="center">An internal restaurant system to browse menu, place orders, and manage them in real time 🔄</p>
 
-### Menu APIs
-
-| Method | Route             | Description                |
-|--------|-------------------|----------------------------|
-| GET    | `/api/menu`       | Get all menu items         |
-| GET    | `/api/menu/:id`   | Get a single menu item     |
-| POST   | `/api/menu`       | Add new menu item (Admin)  |
-| PUT    | `/api/menu/:id`   | Update menu item (Admin)   |
-| DELETE | `/api/menu/:id`   | Delete menu item (Admin)   |
+<p align="center">
+  <img src="https://img.shields.io/badge/React-Frontend-blue?logo=react" />
+  <img src="https://img.shields.io/badge/Node.js-Backend-green?logo=node.js" />
+  <img src="https://img.shields.io/badge/Express-Server-lightgrey?logo=express" />
+  <img src="https://img.shields.io/badge/MongoDB-Database-darkgreen?logo=mongodb" />
+  <img src="https://img.shields.io/badge/Vercel-Hosting-black?logo=vercel" />
+</p>
 
 ---
 
-### Order APIs
+## ✨ Features
 
-| Method | Route              | Description                      |
-|--------|--------------------|----------------------------------|
-| POST   | `/api/orders`      | Place a new order (Customer)     |
-| GET    | `/api/orders`      | Get all orders (Admin)           |
-| GET    | `/api/orders/:id`  | Get order by ID                  |
-| PUT    | `/api/orders/:id`  | Update order status (Admin only) |
+- 🍔 **Customer Menu View** – Browse live menu by category
+- 🛒 **Cart & Order** – Add to cart, place orders with real-time status tracking
+- 🔐 **Admin Authentication** – Token-based login to secure admin access
+- 📋 **Admin Dashboard** – View, update, and manage orders
+- ✏️ **Menu Manager** – Add, edit, delete menu items
+- 🟢 **Toggle Availability** – Enable/disable items from customer view
+- 📦 **REST API** – Clean and modular backend routes
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend**: React, React Router, Axios, Vite
+- **Backend**: Node.js, Express
+- **Database**: MongoDB Atlas
+- **Authentication**: JWT, Bcrypt
+- **Deployment**: Vercel (Frontend) + Render (Backend)
+
+---
 
 
-For now we can work on these api endpoints
 
-**Work on Dev branch not Main**
+## 🌐 Live Demo
 
-pull the dev branch or create your own branch, pull dev to code on a specific feature then we can merge it to dev after code review
+🔗 [restaurant-order-system-web.vercel.app](https://restaurant-order-system-web.vercel.app)
 
-once the project is done we can merge the dev into main
+🧪 Admin Panel :  
+🔗 [restaurant-order-system-web.vercel.app/admin/login](https://restaurant-order-system-web.vercel.app/admin/login)
+
+---
+
+## 📸 Screenshots
+
+### 🧾 Customer View  
+<img src="./assets/home.png" alt="Customer View" width="600" />
+
+---
+
+**Menu**
+
+<img src="./assets/menu.png" alt="Customer View" width="600" />
+
+### 🧑‍🍳 Admin Dashboard  
+
+- can be accessed by protected ``` /admin/login ``` route
+
+**Login**
+
+<img src="./assets/adminLogin.png" alt="Admin View" width="600" />
+
+---
+
+**Menu Management**
+
+<img src="./assets/adminMenu.png" alt="Admin View" width="600" />
+
+---
+
+**Order Management**
+
+<img src="./assets/adminOrder.png" alt="Admin View" width="600" />
+
+---
+
+## 🎥 Watch Demo of Admin
+
+🔗 [Watch Demo Video](./assets/demoAdmin.mp4)
+
+---
